@@ -13,10 +13,10 @@ namespace ProxyTwitter
 {
     public class Proxy:IProxy
     {
-        private string CKey= "pVgmQsf74J7G8QjNSez3VIkZL";
-        private string CSecret= "Fc9Blt7gXaD3S5kfoHW8JY1j1LzQFkRlVagGwQmzbAGSFVCA6X";
-        private string AToken= "2849067843-LybO7M8fBmrIQTbBrsd4lxVUqde2zqFUHGm9OTa";
-        private string ATokenSecret= "R6A5irvmLAJdNfiiTWliEjzlMeIOA0BXHpfckzUTDNltm";
+        private string CKey= "";
+        private string CSecret= "";
+        private string AToken= "";
+        private string ATokenSecret= "";
 
         public Proxy()
         {
