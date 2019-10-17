@@ -13,21 +13,21 @@ namespace ProxyTwitter
 {
     public class Proxy:IProxy
     {
-        private string CKey= "";
-        private string CSecret= "";
-        private string AToken= "";
-        private string ATokenSecret= "";
+        private string CKey= "pVgmQsf74J7G8QjNSez3VIkZL";
+        private string CSecret= "Fc9Blt7gXaD3S5kfoHW8JY1j1LzQFkRlVagGwQmzbAGSFVCA6X";
+        private string AToken= "2849067843-LybO7M8fBmrIQTbBrsd4lxVUqde2zqFUHGm9OTa";
+        private string ATokenSecret= "R6A5irvmLAJdNfiiTWliEjzlMeIOA0BXHpfckzUTDNltm";
 
         public Proxy()
         {
-            
+
+            Auth.SetUserCredentials(this.CKey, this.CSecret, this.AToken, this.ATokenSecret);
 
 
         }
 
         public  List<string> SearchTweets(string param, LanguageFilter lang, int quantity)
         {
-            Auth.SetUserCredentials(this.CKey, this.CSecret, this.AToken, this.ATokenSecret);
             List<string> tweets=new List<string>();
 
             var searchParameter = new SearchTweetsParameters(param)
